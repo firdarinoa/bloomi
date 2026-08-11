@@ -4,30 +4,36 @@ Bloomi is a women-focused iOS wellness app designed to help users understand and
 Bloomi integrates with Apple HealthKit to seamlessly read and synchronise relevant health data, providing users with a centralised view of their health and progress.
 The project demonstrates modern iOS development practices, including Clean MVVM architecture, reactive programming, local data persistence, HealthKit integration, data visualisation, and testable business logic.
 
-✨ Features
+Features
+
 ⚖️ Weight Tracking
 Record and monitor weight over time
 Visualise weight trends and progress
 Sync weight data with Apple Health through HealthKit
+
 📏 Body Measurements
 Track measurements such as waist, hips, arms, and thighs
 Monitor changes over time
 Visualise measurement progress
+
 🌸 Period Tracking
 Record menstrual cycle and period history
 Track cycle-related data alongside weight and body measurements
 Integrate relevant menstrual health data with Apple HealthKit
+
 ❤️ HealthKit Integration
 Connect Bloomi with Apple Health
 Read supported health and fitness data from HealthKit
 Synchronise health information while respecting Apple's privacy and permission model
 Handle HealthKit authorisation and data access
+
 📊 Progress Visualisation
 Interactive charts for weight and measurement trends
 Historical health data visualisation
 Progress-focused dashboard
 
 🛠️ Tech Stack
+
 Swift
 SwiftUI
 HealthKit
@@ -40,6 +46,7 @@ Swift Package Manager
 XCTest
 
 🍎 HealthKit Integration
+
 HealthKit acts as one of Bloomi's primary data sources.
 The app handles:
 HealthKit authorisation
@@ -51,6 +58,7 @@ Handling unavailable or unauthorised HealthKit data gracefully
 HealthKit access is implemented with user privacy in mind, following Apple's permission-based approach to health data.
 
 🎯 Project Goals
+
 Bloomi was created as a portfolio project to demonstrate how modern iOS technologies can be combined to build a real-world, health-focused application.
 The project demonstrates experience with:
 Building modern SwiftUI interfaces
@@ -66,6 +74,7 @@ Writing testable business logic
 Designing privacy-conscious health features
 
 🚀 Future Improvements
+
 Advanced HealthKit data synchronisation
 Apple Watch integration
 More detailed progress analytics
