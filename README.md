@@ -1,4 +1,5 @@
 🌸 Bloomi
+
 Bloomi is a women-focused iOS wellness app designed to help users understand and track their weight-loss journey through weight, body measurements, and menstrual cycle data.
 Bloomi integrates with Apple HealthKit to seamlessly read and synchronise relevant health data, providing users with a centralised view of their health and progress.
 The project demonstrates modern iOS development practices, including Clean MVVM architecture, reactive programming, local data persistence, HealthKit integration, data visualisation, and testable business logic.
