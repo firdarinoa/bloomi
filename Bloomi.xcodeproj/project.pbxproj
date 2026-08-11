@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25F036435D6A4E05AC7F7FDA /* MeasurementRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02782E810EB4002ADEBED35 /* MeasurementRowView.swift */; };
+		2F34BBE1C1A84953A8ADC6BA /* AddMeasurementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB33C490A447839EE70A66 /* AddMeasurementView.swift */; };
+		3166D59F735A4D4F9CB3ABE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316AAA48116240D294F8749D /* Assets.xcassets */; };
+		332418D1412C4F779C4C441E /* MeasurementStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF0AEBD9244D6EB565FCF7 /* MeasurementStore.swift */; };
+		39D6E88DC8934F6B96A007C8 /* BodyMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8F6F73E8E6458A9B1DEA09 /* BodyMeasurement.swift */; };
+		41951E8DB61B46D793F050B0 /* AddMeasurementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45024BB4B760493B8D249DD4 /* AddMeasurementViewModel.swift */; };
+		56CC737545C84D32904A8B92 /* MeasurementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087C7BDC216647158FC89368 /* MeasurementListView.swift */; };
+		6B8BE585DBD7450E8E81046C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7618FE1328741DE99386AD6 /* HealthKit.framework */; };
+		80CDB5E20E22422F9C93FC01 /* MeasurementStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86333971FC24A6FBACE09DC /* MeasurementStoring.swift */; };
+		9AFA85090F0E466B8C13648A /* MeasurementDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECA7AC9C014948965DF5AC /* MeasurementDetailView.swift */; };
+		A0BDE7F0F0AF458E88DF9707 /* HealthKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17641FE6DDA4571823429E3 /* HealthKitError.swift */; };
+		A935F180718B42EB84AA6B68 /* MeasurementLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B82B3783BF840928F631F2D /* MeasurementLogViewModel.swift */; };
+		D7552991250F490999A0CF90 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0309EFA6AF46F7AD84606B /* HealthKitManager.swift */; };
+		EF02786C3ADE4B37881526FA /* HealthKitManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373719D6F124F30B2D88D89 /* HealthKitManaging.swift */; };
+		F892560ECE6A45088AB79A80 /* BloomiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97FE05439E4A58AC89500E /* BloomiApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		087C7BDC216647158FC89368 /* MeasurementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementListView.swift; sourceTree = "<group>"; };
+		13B0B1DE62E947CD8B5D9B46 /* Bloomi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bloomi.entitlements; sourceTree = "<group>"; };
+		1E0309EFA6AF46F7AD84606B /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		316AAA48116240D294F8749D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45024BB4B760493B8D249DD4 /* AddMeasurementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeasurementViewModel.swift; sourceTree = "<group>"; };
+		4B82B3783BF840928F631F2D /* MeasurementLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementLogViewModel.swift; sourceTree = "<group>"; };
+		6D97FE05439E4A58AC89500E /* BloomiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomiApp.swift; sourceTree = "<group>"; };
+		7798498EE9A44C20B300B246 /* Bloomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloomi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BB33C490A447839EE70A66 /* AddMeasurementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeasurementView.swift; sourceTree = "<group>"; };
+		BBECA7AC9C014948965DF5AC /* MeasurementDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementDetailView.swift; sourceTree = "<group>"; };
+		D02782E810EB4002ADEBED35 /* MeasurementRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementRowView.swift; sourceTree = "<group>"; };
+		D7618FE1328741DE99386AD6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		D9DF0AEBD9244D6EB565FCF7 /* MeasurementStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementStore.swift; sourceTree = "<group>"; };
+		DD8F6F73E8E6458A9B1DEA09 /* BodyMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMeasurement.swift; sourceTree = "<group>"; };
+		E86333971FC24A6FBACE09DC /* MeasurementStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementStoring.swift; sourceTree = "<group>"; };
+		F17641FE6DDA4571823429E3 /* HealthKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitError.swift; sourceTree = "<group>"; };
+		F373719D6F124F30B2D88D89 /* HealthKitManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManaging.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F27EDBF2E67E4B3B8024BC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8BE585DBD7450E8E81046C /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		223A803BED434BD2BBD288EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD8F6F73E8E6458A9B1DEA09 /* BodyMeasurement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6A8749ED67144B04B470BEB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7798498EE9A44C20B300B246 /* Bloomi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B0A309E05CD42A0BB8459BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7618FE1328741DE99386AD6 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EDD7387A479446CAA61DECB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4B82B3783BF840928F631F2D /* MeasurementLogViewModel.swift */,
+				45024BB4B760493B8D249DD4 /* AddMeasurementViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ACF01C37C3CD4888952F21F7 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				E86333971FC24A6FBACE09DC /* MeasurementStoring.swift */,
+				D9DF0AEBD9244D6EB565FCF7 /* MeasurementStore.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		B363DD28DC4542C2A52BAC1A /* Bloomi */ = {
+			isa = PBXGroup;
+			children = (
+				6D97FE05439E4A58AC89500E /* BloomiApp.swift */,
+				223A803BED434BD2BBD288EB /* Models */,
+				E9117ED6FAD14F308997F485 /* HealthKit */,
+				ACF01C37C3CD4888952F21F7 /* Persistence */,
+				6EDD7387A479446CAA61DECB /* ViewModels */,
+				DD4AB27181FB4BAAB07B92EA /* Views */,
+				316AAA48116240D294F8749D /* Assets.xcassets */,
+				13B0B1DE62E947CD8B5D9B46 /* Bloomi.entitlements */,
+			);
+			path = Bloomi;
+			sourceTree = "<group>";
+		};
+		B8F648D87A8D41F79A61FE83 = {
+			isa = PBXGroup;
+			children = (
+				B363DD28DC4542C2A52BAC1A /* Bloomi */,
+				6A8749ED67144B04B470BEB5 /* Products */,
+				6B0A309E05CD42A0BB8459BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD4AB27181FB4BAAB07B92EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				087C7BDC216647158FC89368 /* MeasurementListView.swift */,
+				D02782E810EB4002ADEBED35 /* MeasurementRowView.swift */,
+				83BB33C490A447839EE70A66 /* AddMeasurementView.swift */,
+				BBECA7AC9C014948965DF5AC /* MeasurementDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9117ED6FAD14F308997F485 /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				F373719D6F124F30B2D88D89 /* HealthKitManaging.swift */,
+				1E0309EFA6AF46F7AD84606B /* HealthKitManager.swift */,
+				F17641FE6DDA4571823429E3 /* HealthKitError.swift */,
+			);
+			path = HealthKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE43806264074134861FB31F /* Bloomi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849F74DC1197459ABA80BBC5 /* Build configuration list for PBXNativeTarget "Bloomi" */;
+			buildPhases = (
+				5B54DF7C1A0E4A9DAD55AAF2 /* Sources */,
+				F27EDBF2E67E4B3B8024BC1E /* Frameworks */,
+				189FDB4DC7A74A04BC1F9FAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bloomi;
+			productName = Bloomi;
+			productReference = 7798498EE9A44C20B300B246 /* Bloomi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FD9C074317240B3B3EF6D19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CE43806264074134861FB31F = {
+						CreatedOnToolsVersion = 15.2;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 960E165C49D4484D8629DD7E /* Build configuration list for PBXProject "Bloomi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8F648D87A8D41F79A61FE83;
+			productRefGroup = 6A8749ED67144B04B470BEB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE43806264074134861FB31F /* Bloomi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		189FDB4DC7A74A04BC1F9FAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3166D59F735A4D4F9CB3ABE8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B54DF7C1A0E4A9DAD55AAF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F892560ECE6A45088AB79A80 /* BloomiApp.swift in Sources */,
+				39D6E88DC8934F6B96A007C8 /* BodyMeasurement.swift in Sources */,
+				EF02786C3ADE4B37881526FA /* HealthKitManaging.swift in Sources */,
+				D7552991250F490999A0CF90 /* HealthKitManager.swift in Sources */,
+				A0BDE7F0F0AF458E88DF9707 /* HealthKitError.swift in Sources */,
+				80CDB5E20E22422F9C93FC01 /* MeasurementStoring.swift in Sources */,
+				332418D1412C4F779C4C441E /* MeasurementStore.swift in Sources */,
+				A935F180718B42EB84AA6B68 /* MeasurementLogViewModel.swift in Sources */,
+				41951E8DB61B46D793F050B0 /* AddMeasurementViewModel.swift in Sources */,
+				56CC737545C84D32904A8B92 /* MeasurementListView.swift in Sources */,
+				25F036435D6A4E05AC7F7FDA /* MeasurementRowView.swift in Sources */,
+				2F34BBE1C1A84953A8ADC6BA /* AddMeasurementView.swift in Sources */,
+				9AFA85090F0E466B8C13648A /* MeasurementDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4E73D2CAFC814BF3BD38E9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		54995C985FD546B383A7FE61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Bloomi/Bloomi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Bloomi reads your weight and body composition data from Health to keep your measurement history in sync.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Bloomi writes weight and body composition entries to Health so they stay in sync with your other health apps.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.firda.Bloomi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		91CB34B051464CED83CED9A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Bloomi/Bloomi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Bloomi reads your weight and body composition data from Health to keep your measurement history in sync.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Bloomi writes weight and body composition entries to Health so they stay in sync with your other health apps.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.firda.Bloomi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E36F90C015740E5910447FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849F74DC1197459ABA80BBC5 /* Build configuration list for PBXNativeTarget "Bloomi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91CB34B051464CED83CED9A3 /* Debug */,
+				54995C985FD546B383A7FE61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960E165C49D4484D8629DD7E /* Build configuration list for PBXProject "Bloomi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E36F90C015740E5910447FF /* Debug */,
+				4E73D2CAFC814BF3BD38E9D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FD9C074317240B3B3EF6D19 /* Project object */;
+}
