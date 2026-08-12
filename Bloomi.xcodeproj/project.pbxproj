@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,16 @@
 		F892560ECE6A45088AB79A80 /* BloomiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97FE05439E4A58AC89500E /* BloomiApp.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		959BB9E0302D184100867298 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD9C074317240B3B3EF6D19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE43806264074134861FB31F;
+			remoteInfo = Bloomi;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		087C7BDC216647158FC89368 /* MeasurementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementListView.swift; sourceTree = "<group>"; };
 		13B0B1DE62E947CD8B5D9B46 /* Bloomi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bloomi.entitlements; sourceTree = "<group>"; };
@@ -34,6 +44,7 @@
 		6D97FE05439E4A58AC89500E /* BloomiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomiApp.swift; sourceTree = "<group>"; };
 		7798498EE9A44C20B300B246 /* Bloomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloomi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BB33C490A447839EE70A66 /* AddMeasurementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeasurementView.swift; sourceTree = "<group>"; };
+		959BB9DC302D184100867298 /* BloomiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloomiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBECA7AC9C014948965DF5AC /* MeasurementDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementDetailView.swift; sourceTree = "<group>"; };
 		D02782E810EB4002ADEBED35 /* MeasurementRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementRowView.swift; sourceTree = "<group>"; };
 		D7618FE1328741DE99386AD6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -44,7 +55,18 @@
 		F373719D6F124F30B2D88D89 /* HealthKitManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManaging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		959BB9DD302D184100867298 /* BloomiTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BloomiTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		959BB9D9302D184100867298 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F27EDBF2E67E4B3B8024BC1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				7798498EE9A44C20B300B246 /* Bloomi.app */,
+				959BB9DC302D184100867298 /* BloomiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				B363DD28DC4542C2A52BAC1A /* Bloomi */,
+				959BB9DD302D184100867298 /* BloomiTests */,
 				6A8749ED67144B04B470BEB5 /* Products */,
 				6B0A309E05CD42A0BB8459BC /* Frameworks */,
 			);
@@ -146,6 +170,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		959BB9DB302D184100867298 /* BloomiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 959BB9E4302D184100867298 /* Build configuration list for PBXNativeTarget "BloomiTests" */;
+			buildPhases = (
+				959BB9D8302D184100867298 /* Sources */,
+				959BB9D9302D184100867298 /* Frameworks */,
+				959BB9DA302D184100867298 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				959BB9E1302D184100867298 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				959BB9DD302D184100867298 /* BloomiTests */,
+			);
+			name = BloomiTests;
+			packageProductDependencies = (
+			);
+			productName = BloomiTests;
+			productReference = 959BB9DC302D184100867298 /* BloomiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CE43806264074134861FB31F /* Bloomi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 849F74DC1197459ABA80BBC5 /* Build configuration list for PBXNativeTarget "Bloomi" */;
@@ -170,9 +217,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 2650;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					959BB9DB302D184100867298 = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = CE43806264074134861FB31F;
+					};
 					CE43806264074134861FB31F = {
 						CreatedOnToolsVersion = 15.2;
 						SystemCapabilities = {
@@ -197,6 +248,7 @@
 			projectRoot = "";
 			targets = (
 				CE43806264074134861FB31F /* Bloomi */,
+				959BB9DB302D184100867298 /* BloomiTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +259,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3166D59F735A4D4F9CB3ABE8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		959BB9DA302D184100867298 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +292,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		959BB9D8302D184100867298 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		959BB9E1302D184100867298 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE43806264074134861FB31F /* Bloomi */;
+			targetProxy = 959BB9E0302D184100867298 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4E73D2CAFC814BF3BD38E9D8 /* Release */ = {
@@ -349,6 +423,55 @@
 			};
 			name = Debug;
 		};
+		959BB9E2302D184100867298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bloomilabs.BloomiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bloomi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bloomi";
+			};
+			name = Debug;
+		};
+		959BB9E3302D184100867298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bloomilabs.BloomiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bloomi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bloomi";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		9E36F90C015740E5910447FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -418,6 +541,15 @@
 			buildConfigurations = (
 				91CB34B051464CED83CED9A3 /* Debug */,
 				54995C985FD546B383A7FE61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		959BB9E4302D184100867298 /* Build configuration list for PBXNativeTarget "BloomiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				959BB9E2302D184100867298 /* Debug */,
+				959BB9E3302D184100867298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
